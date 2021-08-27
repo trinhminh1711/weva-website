@@ -1,0 +1,22 @@
+.container
+{
+    width: 1240px;
+    @include Responsive(Xs) {
+        max-width: 100% !important;
+	}
+    @include Responsive(Xs) {
+		max-width: 100% !important;
+	}
+    @include Responsive(Sm) {
+		max-width: 100% !important;
+	}
+    @include Responsive(Md) {
+		max-width: 100% !important;
+	}
+    @include Responsive(Lg) {
+		max-width: 100% !important;
+	}
+    @include Responsive(XL) {
+		max-width: 100% !important;
+	}
+}

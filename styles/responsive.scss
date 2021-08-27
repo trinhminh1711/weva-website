@@ -1,0 +1,362 @@
+@import "../styles/scss/abstracts/variables";
+@import "../styles/scss/layouts/gird.scss";
+@media (max-width: $extra-small) {
+  .header {
+    & .header__navbar {
+      & .nav__bar__icon {
+        display: block;
+      }
+      justify-content: center;
+      .header__navbar__logo {
+        flex: 1;
+        max-width: unset;
+        display: flex;
+        justify-content: center;
+        & img {
+          width: 40%;
+          padding-left: 15%;
+        }
+      }
+      .header__navbar__navigation {
+        display: none;
+      }
+      .header__navbar__language {
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    & .header__banner {
+      & .header__banner__content {
+        padding: 2rem;
+        & .header__content__text {
+          h1 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.3rem;
+            margin: 1rem 0;
+          }
+        }
+        & .header__banner__button a {
+          margin: 0 !important;
+          max-width: 60%;
+          padding-right: 1rem;
+        }
+      }
+      & .header__banner__img {
+        margin: 0 auto !important;
+
+        img {
+          max-width: 50%;
+          display: block;
+          margin: 0 auto !important;
+        }
+      }
+    }
+  }
+  main {
+    & .block__carosel {
+      & .block__carosel--center {
+        order: 2;
+        padding-top: 3rem;
+        & > div {
+          width: 90% !important;
+          margin: 0 auto;
+        }
+        & .slick-dots {
+          bottom: -5rem !important;
+        }
+      }
+      & .block__carosel__content {
+        margin-top: 3rem;
+        order: 1;
+        & p {
+          margin-top: 3rem !important;
+        }
+      }
+    }
+    & .block__timeline--vertical {
+      .pd-r,
+      .pd-l {
+        padding: 0 !important;
+      }
+      padding: 0 !important;
+      & .timeline__vertical {
+        & .timeline__vertical--textcontent {
+          margin: 2rem 0;
+          order: 2;
+          h4 {
+            font-size: 2rem;
+            text-align: center;
+          }
+          p {
+            font-size: 1.3rem;
+            margin: 0;
+            text-align: justify;
+            width: 100%;
+            padding: 0 4rem;
+            margin-left: auto;
+          }
+        }
+        padding-bottom: 1rem !important;
+        &::after {
+          left: 8% !important;
+          top: 0% !important;
+          height: 100% !important;
+        }
+      }
+      & .timeline__vertical--img {
+        order: 1;
+        max-width: 60%;
+        padding: 2rem 0 !important;
+        display: block;
+        margin: 0 auto;
+      }
+      & .timeline__vertical--number {
+        left: 2% !important;
+        bottom: 0;
+        top: 0% !important;
+        z-index: 9;
+      }
+    }
+    & .benefits {
+      & .benefits__title {
+        font-size: 3rem !important;
+        padding: 2rem !important;
+      }
+    }
+  }
+  footer {
+    padding: 1rem;
+    .footer__col {
+      & .footer__button__contact {
+        button {
+          margin-top: 1rem;
+        }
+      }
+      & .footer__infor {
+        padding: 0 !important;
+        margin-top: 4rem;
+        & .footer__infor__col > div {
+          width: 100% !important;
+          max-width: 100%;
+          flex-basis: 100% !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $extra-small+1px) and (max-width: $mobile-landscape) {
+  @include Responsive_customize;
+}
+@media (min-width: $mobile-landscape+1px) and (max-width: $mobile) {
+  @include Responsive_customize;
+  .header .header__navbar .nav__bar__icon {
+    top: 2rem;
+  }
+  .header {
+    .header__banner {
+      .header__content__text {
+        h1 {
+          font-size: 2.5rem !important;
+        }
+        p {
+          font-size: 1.6rem !important;
+          margin: 2.5rem 0 !important;
+        }
+      }
+      .header__banner__button {
+        max-width: 70%;
+      }
+    }
+  }
+  main {
+    .block__carosel {
+      .block__carosel__content {
+        margin-bottom: 5rem;
+      }
+    }
+    .block__timeline--vertical {
+      .timeline__vertical {
+        .timeline__vertical--textcontent h4 {
+          font-size: 2.2rem;
+        }
+        .timeline__vertical--textcontent p {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $mobile+1px) and (max-width: $handheld) {
+  @include Responsive_customize;
+  .header .header__navbar .nav__bar__icon {
+    top: 3rem;
+  }
+  .container {
+    width: 95%;
+    max-width: 100%;
+  }
+  #benefits {
+    .card__lists {
+      & > div {
+        width: 50%;
+        flex-basis: 50%;
+        & .service__card {
+          flex-direction: column;
+          padding: 1rem;
+          & .service__card__content {
+            padding: 0;
+            margin-top: 2rem;
+            text-align: justify;
+            width: 100%;
+            h5 {
+              font-size: 1.6rem;
+              text-align: center;
+            }
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  main .block__timeline--vertical .timeline__vertical--number {
+    left: 0 !important;
+  }
+  main .block__timeline--vertical .timeline__vertical::after {
+    left: 4% !important;
+  }
+  .header__banner {
+    margin-top: 4rem;
+    .header__banner__button a {
+      max-width: 30% !important;
+    }
+    .header__banner__content p {
+      margin: 3rem 0 !important;
+      font-size: 1.8rem !important;
+    }
+    .slick-dots li .slick-dots {
+      bottom: -8rem;
+    }
+  }
+  .block__carosel {
+    .block__carosel__content {
+      margin-bottom: 6rem;
+    }
+  }
+
+  footer {
+    .footer__col .footer__infor .footer__infor__col > div {
+      max-width: 50%;
+      flex-basis: 50%;
+      padding-top: 2rem;
+    }
+  }
+}
+@media (min-width: $handheld+1px) and (max-width: $small-desktop) {
+  @include Responsive_customize;
+  .header .nav__bar__icon {
+    top: 3rem;
+  }
+  .header__banner {
+    margin-top: 3rem;
+    .header__banner__button {
+      a {
+        width: 40%;
+      }
+    }
+    .header__banner__content h1 {
+      font-size: 2.8rem !important;
+      font-family: Roboto-700 !important;
+    }
+    .header__banner__content p {
+      margin: 3rem 0 !important;
+      font-size: 2rem !important;
+    }
+  }
+  .block__carosel {
+    margin-top: 3rem;
+  }
+  main {
+    & .block__timeline--vertical {
+      flex-direction: column;
+      justify-content: center;
+      .timeline__vertical--textcontent {
+        width: 70%;
+        margin: 0 auto !important;
+        flex-basis: 70%;
+      }
+      & .timeline__vertical::after {
+        left: 3% !important;
+      }
+      & .timeline__vertical--number {
+        left: 0 !important;
+      }
+    }
+    .card__lists {
+      .service__card {
+        flex-direction: column !important;
+        padding: 2rem 1rem !important;
+        .service__card__content {
+          width: 100%;
+          padding: 0 !important;
+          h5 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            text-align: center;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  .footer__infor__col > div {
+    width: 50% !important;
+    flex-basis: 50% !important;
+  }
+  @media (min-width: $handheld+1px) and (max-width: $small-desktop) {
+    .header .header__navbar .nav__bar__icon {
+      top: 4rem;
+    }
+    .header__banner {
+      margin-top: 8rem;
+    }
+    .header .header__banner .header__banner__img img {
+      max-width: 90%;
+    }
+    main main .block__carosel .block__carosel__content {
+      order: 2;
+    }
+    main {
+      .block__carosel {
+        .block__carosel--center {
+          order: 1;
+        }
+        .block__carosel__content {
+          order: 2;
+        }
+      }
+      .block__timeline--vertical {
+        .timeline__vertical::after {
+          left: 10% !important;
+        }
+        .timeline__vertical--number {
+          left: 7.5% !important;
+        }
+        .timeline__vertical--textcontent {
+          h4 {
+            font-size: 3rem !important;
+          }
+          p {
+            font-size: 2rem !important;
+          }
+        }
+      }
+    }
+  }
+}

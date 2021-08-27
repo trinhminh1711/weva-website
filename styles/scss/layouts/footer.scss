@@ -1,0 +1,82 @@
+footer
+{
+    padding: 15rem 5rem;
+    background-image: url(../uploads/mask-footer.png);
+    background-size: cover;
+    & .footer__col
+    {
+        & .footer__col__logo
+        {
+            max-width: calc(( 140 / 380) * 100%);
+            margin-bottom: 2.5rem;
+            object-fit: contain;
+        }
+        & .footer__button__contact button
+        {
+            font-family: Roboto-300;
+            font-size: 1.4rem;
+            @include align_horizontal;
+            @include align_vertical;
+            border-radius: 1rem;
+            border: solid 1px $color-purple;
+            background-color: #8e44ad;
+            color: $color-white;
+            transition: .2s ease-in-out;
+            padding: 1.5rem;
+            margin-top: 3.5rem;
+            & img
+            {
+                max-width: 2rem;
+                height: auto;
+                margin-right: .8rem;
+            }
+        }
+        & .footer__col__content h3
+        {
+            text-align: justify;
+            font-size: $footer-title;
+            font-family: Roboto-700;
+            line-height: 2.5rem;
+            margin-top: $footer-title;
+        }
+        .footer__infor
+        {
+            display: flex;
+            padding-left: 9.5rem;
+            & .footer__infor__col
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                & > div
+                {
+                    margin-bottom: 1.8rem;
+                    width: 50%;
+                    flex-basis: 50%;
+                }
+                .footer__infor__title
+                {
+                    display: flex;
+                    align-items: baseline;
+                    font-size: 1.8rem;
+                    margin-bottom: .8rem;
+                    font-family: Roboto-700;
+                    img
+                    {
+                        max-width: 2rem;
+                        height: auto;
+                        margin-right: 1.7rem;
+                    }
+                }
+                p
+                {
+                    font-size: 1.5rem;
+                    font-family: Roboto-300;
+                    margin: 0 0 .8rem 3.7rem;
+ 
+                }
+            }
+        }
+
+    }
+}
