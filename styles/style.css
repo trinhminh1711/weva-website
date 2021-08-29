@@ -289,7 +289,7 @@ html[xmlns] .clearfix {
   justify-content: center;
 }
 .header .scroll--fixed .language__dropdown span {
-  color: #8e44ad;
+  color: #8e44ad !important;
 }
 .header .scroll--fixed .nav__items li a::after {
   content: " ";
