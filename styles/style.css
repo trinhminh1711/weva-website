@@ -703,7 +703,7 @@ main .block__timeline--vertical .pd-l {
     font-size: 3rem !important;
     padding: 2rem !important;
   }
-
+  main .benefits .benefits__title:be
   footer {
     padding: 1rem;
   }
@@ -1824,7 +1824,26 @@ main .benefits .benefits__title {
   text-align: center;
   font-size: 4rem;
   letter-spacing: normal;
+position:relative;
 }
+main .benefits .benefits__title::before {
+content: " ";
+height: 3px;
+background-color: #000000;
+width: 10rem;
+left: 28%;
+top:50%;
+position:absolute;
+  }
+  main .benefits .benefits__title::after {
+    content: " ";
+    height: 3px;
+    background-color: #000000;
+    width: 10rem;
+    right: 28%;
+    top:50%;
+    position:absolute;
+      }
 main .benefits .service__card {
   display: flex;
   justify-content: center;
