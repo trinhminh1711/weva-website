@@ -288,6 +288,9 @@ html[xmlns] .clearfix {
   color: #8e44ad;
   justify-content: center;
 }
+.header .scroll--fixed .language__dropdown span {
+  color: #8e44ad;
+}
 .header .scroll--fixed .nav__items li a::after {
   content: " ";
   width: 30%;
