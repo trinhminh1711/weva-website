@@ -907,6 +907,14 @@ main .block__timeline--vertical .pd-l {
     flex-basis: 100%;
     padding: 1rem;
   }
+  main .benefits .benefits__title::before 
+  {
+  display:none;
+  }
+  main .benefits .benefits__title::after
+  {
+ display:none; 
+  }
 }
 @media (min-width: 481px) and (max-width: 640px) {
   .header .header__navbar {
@@ -1123,6 +1131,14 @@ main .block__timeline--vertical .pd-l {
   main .block__timeline--vertical .timeline__vertical .timeline__vertical--textcontent p {
     font-size: 1.6rem;
   }
+  main .benefits .benefits__title::before 
+  {
+  display:none;
+  }
+  main .benefits .benefits__title::after
+  {
+ display:none; 
+  }
 }
 @media (min-width: 641px) and (max-width: 768px) {
   .header .header__navbar {
@@ -1146,6 +1162,14 @@ main .block__timeline--vertical .pd-l {
   }
   .header .header__navbar .header__navbar__language i {
     font-size: 1.5rem;
+  }
+  main .benefits .benefits__title::before 
+  {
+  display:none;
+  }
+  main .benefits .benefits__title::after
+  {
+ display:none; 
   }
 }
 @media (min-width: 641px) and (max-width: 768px) and (min-width: 321px) and (max-width: 480px) {
@@ -1173,6 +1197,14 @@ main .block__timeline--vertical .pd-l {
     margin: 0 !important;
     max-width: 60%;
     padding-right: 1rem;
+  }
+  main .benefits .benefits__title::before 
+  {
+  display:none;
+  }
+  main .benefits .benefits__title::after
+  {
+ display:none; 
   }
 }
 @media (min-width: 641px) and (max-width: 768px) {
@@ -1310,6 +1342,14 @@ main .block__timeline--vertical .pd-l {
     max-width: 100%;
     flex-basis: 100%;
     padding: 1rem;
+  }
+  main .benefits .benefits__title::before 
+  {
+  display:none;
+  }
+  main .benefits .benefits__title::after
+  {
+ display:none; 
   }
 }
 @media (min-width: 641px) and (max-width: 768px) {
@@ -1652,7 +1692,14 @@ main .block__timeline--vertical .pd-l {
   main main .block__carosel .block__carosel__content {
     order: 2;
   }
-
+main .benefits .benefits__title::before 
+  {
+  display:none;
+  }
+  main .benefits .benefits__title::after
+  {
+ display:none; 
+  }
   main .block__carosel .block__carosel--center {
     order: 1;
   }
